@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let prod={
+    "id": 506,
+    "title": "MacBook Pro",
+    "description": "MacBook Pro 2021 with mini-LED display may launch between September, November",
+    "price": 2000,
+    "discountPercentage": 11.02,
+    "rating": 4.57,
+    "stock": 83,
+    "brand": "Apple",
+    "category": "laptops"
+    
+  }
+    fetch("http://localhost:8000/product",{
+      method:"POST",
+      body:JSON.stringify(prod),
+      headers:{
+        "Content-Type":"application/json"
+      }
+    }).then((res)=>{
+      return res.json()
+    }).then((data)=>{
+      console.log(data)
+    })
+    .catch((err)=>{
+      console.log(err)
+    })
+  </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+{
+
+“id”: “0009”,
+
+“type”: “donut”,
+
+“name”: “Cake”,
+
+“image”:
+
+{
+
+“url”: “images/0009.jpg”,
+
+“width”: 300,
+
+“height”: 300
+
+},
+
+“thumbnail”:
+
+{
+
+“url”: “images/thumbnails/0009.jpg”,
+
+“width”:42,
+
+“height”: 42
+
+}
+
+}
